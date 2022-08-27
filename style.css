@@ -1,0 +1,160 @@
+body{
+    overflow: hidden;
+}
+.sky
+{
+    height: 100vh;
+    width: 100%;
+   
+    background-image: url(background.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    /*animation: movetrack linear 5s infinite;*/
+}
+.trees
+{
+    margin-top: -30vh;
+    height: 100vh;
+    width: 100%;
+    background-image: url(trees.png);
+    background-repeat: no-repeat; 
+    position: absolute;
+   
+}
+.track
+{
+    margin-top: 70vh;
+    height: 50vh;
+    width: 800vw;
+    background-image: url(track.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    animation: moveTrack linear 6s infinite;
+}
+.car
+{
+    bottom: 40px;
+    height: 100px;
+    width: 350px;
+    background-image: url(car_body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: absolute;
+   /* animation: shake linear 1s infinite;*/
+    animation:  runcar linear 10s infinite;
+}
+.wheel1 img
+{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    background-size: cover;
+    left: 40px;
+    top: 35px;
+    animation: wheelRotation linear .16s infinite;
+
+   
+}
+.wheel2 img
+{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    background-size: cover;
+    left: 217px;
+    top: -38px;
+    animation: wheelRotation linear .16s infinite;
+
+   
+}
+.car1
+{
+    bottom: 150px;
+    height: 100px;
+    width: 350px;
+    background-image: url(car_body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    position: absolute;
+   /* animation: shake linear 1s infinite;*/
+    animation:  runcar linear 10s infinite;
+}
+.wheel11 img
+{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    background-size: cover;
+    left: 40px;
+    top: 35px;
+    animation: wheelRotation linear .16s infinite;
+  
+   
+}
+.wheel21 img
+{
+ 
+    height: 70px;
+    width: 70px;
+    position: relative;
+    background-size: cover;
+    left: 217px;
+    top: -38px;
+    animation: wheelRotation linear .16s infinite;
+
+   
+}
+
+@keyframes wheelRotation
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ 
+@keyframes moveTrack
+{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+@keyframes shake
+{
+    0%
+    {
+        transform: translatey(-5px);
+    }
+    50%
+    { 
+        transform: translatey(5px);
+    }
+    100%
+    {
+        transform: translatey(-5px);
+    }
+  
+}
+@keyframes runcar
+{
+    0%
+    {
+       
+        transform: translatex(0px);
+    }
+    100%
+    {
+        transform: translatex(1000px);
+    
+    }
+  
+    
+}
+/*@keyframes skyrotate
+{
+    100%
+    {
+        transition: translatex(-500vw);
+    }
+}*/
